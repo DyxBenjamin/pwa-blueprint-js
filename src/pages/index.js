@@ -3,7 +3,6 @@ import Image from 'next/image'
 import {Inter} from 'next/font/google'
 import styles from '@styles/Home.module.css'
 import Logo from '@assets/images/DevClustersLogo.png'
-import {signIn} from "next-auth/react";
 import Fullscreen from "@components/layouts/Fullscreen";
 import {Button, Typography} from "@mui/material";
 import FlexColumn from "@components/layouts/FlexColumn";
@@ -46,49 +45,11 @@ export default function Home() {
 						<Button
 							variant={'outlined'}
 							fullWidth
-							color={'white'}
-							onClick={ () => signIn() } >
+							color={'white'}>
 							Sign In
 						</Button>
 					</FlexColumn>
 				</Fullscreen>
-
-
-				{/*<div className={styles.description}>*/}
-				{/*	<p>*/}
-				{/*		<a onClick={ () => signIn("github") } >*/}
-				{/*			Sign in with Github*/}
-				{/*		</a>*/}
-				{/*	</p>*/}
-				{/*	<div>*/}
-				{/*		<a*/}
-				{/*			href="https://www.devclusters.com"*/}
-				{/*			target="_blank"*/}
-				{/*			rel="noopener noreferrer"*/}
-				{/*		>*/}
-				{/*			By{' '}*/}
-				{/*			<Image*/}
-				{/*				src={Logo}*/}
-				{/*				alt="DevClusters Logo"*/}
-				{/*				className={styles.vercelLogo}*/}
-				{/*				width={30}*/}
-				{/*				height={30}*/}
-				{/*				priority*/}
-				{/*			/>*/}
-				{/*		</a>*/}
-				{/*	</div>*/}
-				{/*</div>*/}
-
-				{/*<div className={styles.center}>*/}
-				{/*	<Image*/}
-				{/*		className={styles.logo}*/}
-				{/*		src={Logo}*/}
-				{/*		alt="DevClusters Logo"*/}
-				{/*		width={180}*/}
-				{/*		height={180}*/}
-				{/*		priority*/}
-				{/*	/>*/}
-				{/*</div>*/}
 			</main>
 		</>
 	)

@@ -4,20 +4,10 @@ import FlexColumn from "@components/layouts/FlexColumn";
 import FlexRow from "@components/layouts/FlexRow";
 import Logo from "@assets/images/DevClustersLogo.png";
 import Image from "next/image";
-import {signIn, useSession} from "next-auth/react";
 import {useRouter} from "next/router";
 
 export default function Signin() {
-    const { status} = useSession()
     const router = useRouter()
-
-    console.log('%c << 📌 s >>', 'color: white; font-size: 12px');
-    console.log(status);
-
-    if (status === 'authenticated') {
-        router.push('/app').then()
-    }
-
 
     return (
         <Fullscreen
